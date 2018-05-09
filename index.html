@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- Include meta tag to ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Include jQuery Mobile stylesheets -->
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <!-- Include the jQuery library -->
+        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <!-- Include the jQuery Mobile library -->
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        
+        <title>Roberto Selles' Programmed Inqury for Mr. Allan</title>
+        <style>
+            #paragraph {
+                text-indent: 40px;
+            }
+            #intro, #pick-page, #tip {
+                text-align: center;
+            }
+        </style>
+        <title>Programming Inquiry</title>
+    </head>
+    <body>
+        <div data-role="page" id="intro">
+			<div data-role="header">
+				<h1>Roberto's Programming Inquiry</h1>
+			</div>
+			<div data-role="main">
+				<p id="paragraph">
+					Technology has existed for many years as it has developed we got computers, smartphones, and even smart watches that can sometimes play games! And that is what gave us programming and coding into the world! But not many people are able to figure out how any of that works so they think that it is almost impossible, so people are assuming it is this: “01001000 01100101 01101100 01101100 01101111 00100000 01010111 01101111 01110010 01101100 01100100” or “48 65 6c 6c 6f 20 57 6f 72 6c 64”; when honestly, it is more like: ‘print(“Hello World”);’! Looks simple now! Right? Let’s talk about code now!
+					<br/><br/>
+					<button onclick="getStarted()">Lets Get Started!</button>
+				</p>
+            </div>
+        </div>
+        
+        <div data-role="popup" id="tip">
+            Before you start reading this, I reccomend opening this as an app by:<br />
+            1. On the webpage tap the share <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAARVBMVEX///9miP9egv+8yf9Vff9Yf//R2v/M1v/Q2f/N1/9agP9hhf9tjv/Y4P/Czf+Npf+3xf/l6v9Md/+Iof9wkP/c4//r7/9hrUGaAAADqElEQVR4nO2da3OqMBRFAd+ofdj2/v+fehu1TIAQcuS4zcns9cmZ1u1Z7DTYaYWqIkTIv1cP8Gx2l92rR3guu029KVpxt67rel2w4m+DjnJbvDZYF9zivcFyW+waLLVFr8EyW+w1WGKLgwbLazEgWJbiaImWtlCDDV5bPLx6NB0O4QavLRaheJhqsJQWIw2W0aLf4DHwyHyLfoObn+b+qPnxvG236De42Vbd7xbV1v+CYcWBoGdYiGJvif4K+oY9xfX+1aM+xn7QYN+w36JJxf2wwYGh+Rb9Btc3wYFhtfWPgTnFQIMjQ9MthhocGxpucbSL3hgZmt1uxrvojbGhUcUpwZChScVJwaChQcVpwbChOcVteJO5EjbsnzQGT8mP6LQThtGjkhvBE33HlKGhFsMn+o5JQzMtbqc3mSvThrNPzYPZKSOGJhTnZ4wZGlBMmDBqmP1285lQQdywf4w+nzfqg7wfZwXnDH3F4/uzBn2YNmGFzRn6J432OWMuoDOM7BKzhl6LzTOGXMTfKo3tEfOGXYsZrtL7ThPd5xMM/1rMcKepzse2aY/n2LekGKbkvIzdaubP1kmGCTn5kmhoGBrah4b2oaF9aGgfGtqHhvahoX1oaB8a2oeG9snS8OOyFnBaRcPSDFcnyUtePhYarv7++zyN9mux4VcbfYUhTfygqhvWbeyQphh+yATxhvX3QsOT8PXwhpuFhvGP2ORguLTD79wNi/85tLyXNpmdDxttw+ZtYZBD8z3NW6NtuDTIoWmoNhgNRdBQAg3xQQ4aSqAhPshBQwk0xAc5aCiBhvggBw0l0BAf5KChBBrigxw0lEBDfJCDhhJoiA9y0FACDfFBDhpKoCE+yEFDCTTEBzloKIGG+CAHDSXQEB/koKEEGuKDHDSUQEN8kIOGEmiID3LQUAIN8UEOGkqgIT7IQUMJNMQHOWgogYb4IEf3mUGFrDwN71fiVbmCbp6Gn4pX0M3TsDrXbdPWKlfQzdSwqg4rpRvlZWuoBg3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3xQdrQEB+kDQ3lQRr3ktVE/V6yafcDBtLNpWaYKzSkIQ1fDw1pWIDhf+BsMsTJYYWPAAAAAElFTkSuQmCC" width="10"/> button<br />
+            2. Look for the option "Add to Home Screen"<br />
+            3. Tap "Add" and open the app that you just opened<br />
+            <img src="https://blackd00r.com/lightwebapp/img/addhome.png" width="200">
+            <button onclick="location.href = '#pick-page'">Lets Actually Get Started!</button>
+        </div>
+        
+        <div data-role="page" id="pick-page">
+            <div data-role="header">
+                <h1>Main Menu</h1>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                <p>Pick which premise to read first</p>
+                <a href="#premise-1" class="ui-btn">How hard is Coding?</a>
+                <a href="#premise-2" class="ui-btn">What kinds of programming languages are there?</a>
+                <a href="#premise-3" class="ui-btn">How do you code?</a>
+            </div>
+`    
+            <div data-role="footer">
+                <h1></h1>
+            </div>
+        </div>
+        
+        <div data-role="page" id="premise-1">
+            <div data-role="header">
+                <h1>How hard is coding?</h1>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                <p id="paragraph">
+                    First of all, is programming difficult? My answer is: it’s easy,
+                    but it takes time to learn! One reason, is because the code can be
+                    read easily! Using the the example, you can see the code of a
+                    simple counter in the left, and the code to its right! What is
+                    happening, is that in the body, there is a section called &lt;div&gt; with an id called “counter” where the JavaScript section
+                    labeled &lt;script&gt; has a function that repeats every second,
+                    and a variable which holds the counter. Another reason is because
+                    coding most of the time, is all English</p>
+            </div>
+            
+            <div data-role="footer">
+				<center>
+					<button onclick="location.href = '#pick-page'">Home</button>
+					<button onclick="location.href = '#premise-2'">Next</button>
+				</center>
+            </div>
+        </div>
+        
+        <div data-role="page" id="premise-2">
+            <div data-role="header">
+                <h1>What kinds of programming languages are there?</h1>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                <p id="paragraph">
+                    Now… What types of programming languages are there. First of all
+                    there are two different programming language bases… there is
+                    imperative languages, where you tell the computer how to do
+                    something, and then there declarative programming languages, where
+                    you tell the code to do something. Since declarative programming is
+                    used today almost all the time, there are two types in there. There
+                    are object oriented programming languages, which use classes like
+                    Python, Java, C#, ect., and then there are procedural programming
+                    languages which is like Javascript, HTML5 (which is what this app/webpage is using), 
+                    and Lua!
+                </p>
+            </div>
+            
+            <div data-role="footer">
+				<center>
+					<button onclick="location.href = '#premise-1'">Back</button>
+					<button onclick="location.href = '#pick-page'">Home</button>
+					<button onclick="location.href = '#premise-3'">Next</button>
+				</center>
+            </div>
+        </div>
+        
+        <div data-role="page" id="premise-3">
+            <div data-role="header">
+                <h1>How do you code?</h1>
+            </div>
+            
+            <div data-role="main" class="ui-content">
+                <p id="paragraph">
+                    Now, Finally, how do people code? Well, what they use is just a text editor.
+                    however, people use different kinds! There are simple text editors like
+                    Visual Studio Code, Sublime Text 3, even just Notepad on windows,  and then
+                    there are big ones like Visual Studio by itself! These are called IDEs,
+                    which are text editors built for programming languages. Some of these are
+                    PyCharm (Python Integrated Development System), Visual Studio, Eclipse, and
+                    Code Blocks!
+                </p>
+            </div>
+            
+            <div data-role="footer">
+				<center>
+					<button onclick="location.href = '#premise-2'">Back</button>
+					<button onclick="location.href = '#pick-page'">Home</button>
+					<button onclick="location.href = '#outro'">Next</button>
+				</center>
+            </div>
+        </div>
+        
+        <div data-role="page" id="outro">
+			<div data-role="header">
+				<h1>Outro</h1>
+			</div>
+            <div data-role="main">
+                <p id="paragraph">
+                    In the end there is a variety of ways you can learn to code and with this, there should be a better chance that you could learn to code, as it is honestly just simple! So all you have to do is give it a try and for sure you will make it! For HTML5, you can find many sources like <a href="w3schools.com">w3schools.com</a>, and there is also programming languages that you can also learn easy like Python as there are many tutorials online and also sources like <a href="https://itunes.apple.com/us/app/learn-to-code-with-python/id953972812?mt=8">Learn to Code with Python</a>, so out there and learn to code if that is what you want as that is pretty much the future!
+                    <a class="ui-button" href="#pick-page"></a>
+                </p>
+            </div>
+            <div data-role="footer">
+				<center>
+					<button onclick="location.href = '#pick-page'">Home</button>
+				</center>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
