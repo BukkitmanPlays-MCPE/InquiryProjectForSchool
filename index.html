@@ -27,7 +27,7 @@
     </head>
     <body>
         <div data-role="page" id="intro">
-			<div data-role="header">
+			<div data-role="header" data-position="fixed">
 				<h1>Roberto's Programming Inquiry</h1>
 			</div>
 			<div data-role="main">
@@ -48,7 +48,7 @@
             <button onclick="location.href = '#pick-page'">Lets Actually Get Started!</button>
         </div>
         
-        <div data-role="page" id="pick-page">
+        <div data-role="page" id="pick-page" data-position="fixed">
             <div data-role="header">
                 <h1>Main Menu</h1>
             </div>
@@ -60,13 +60,12 @@
                 <a href="#premise-3" class="ui-btn">How do you code?</a>
             </div>
 `    
-            <div data-role="footer">
-                <h1></h1>
+            <div data-role="footer" data-position="fixed">
             </div>
         </div>
         
         <div data-role="page" id="premise-1">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed">
                 <h1>How hard is coding?</h1>
             </div>
             
@@ -82,7 +81,7 @@
                     coding most of the time, is all English</p>
             </div>
             
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
 				<center>
 					<button onclick="location.href = '#pick-page'">Home</button>
 					<button onclick="location.href = '#premise-2'">Next</button>
@@ -91,7 +90,7 @@
         </div>
         
         <div data-role="page" id="premise-2">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed">
                 <h1>What kinds of programming languages are there?</h1>
             </div>
             
@@ -110,7 +109,7 @@
                 </p>
             </div>
             
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
 				<center>
 					<button onclick="location.href = '#premise-1'">Back</button>
 					<button onclick="location.href = '#pick-page'">Home</button>
@@ -120,7 +119,7 @@
         </div>
         
         <div data-role="page" id="premise-3">
-            <div data-role="header">
+            <div data-role="header" data-position="fixed">
                 <h1>How do you code?</h1>
             </div>
             
@@ -136,7 +135,7 @@
                 </p>
             </div>
             
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
 				<center>
 					<button onclick="location.href = '#premise-2'">Back</button>
 					<button onclick="location.href = '#pick-page'">Home</button>
@@ -146,7 +145,7 @@
         </div>
         
         <div data-role="page" id="outro">
-			<div data-role="header">
+			<div data-role="header" data-position="fixed">
 				<h1>Outro</h1>
 			</div>
             <div data-role="main">
@@ -155,7 +154,7 @@
                     <a class="ui-button" href="#pick-page"></a>
                 </p>
             </div>
-            <div data-role="footer">
+            <div data-role="footer" data-position="fixed">
 				<center>
 					<button onclick="location.href = '#pick-page'">Home</button>
 				</center>
